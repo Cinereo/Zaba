@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Multiple Input Page</title>
+    <style>
+        textarea {
+            height: 25px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<form>
+    <input type="button" value="Input Button">
+    <input type="checkbox">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="password">
+    <input type="radio">
+    <input type="reset">
+    <input type="submit">
+    <input type="text">
+    <select>
+        <option>Option</option>
+    </select>
+    <textarea></textarea>
+    <button>Button</button>
+</form>
+<div></div>
+
+<script>
+    // Prevent form submission
+    $("form").submit(function (event) {
+        event.preventDefault();
+    });
+</script>
+
+</body>
+</html>
